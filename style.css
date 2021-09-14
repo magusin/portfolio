@@ -1,0 +1,118 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+  }
+  canvas {
+    transform-origin: 0 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -5;
+  }
+
+  main, section {
+      position: relative;
+  }
+
+  header {
+      position: relative;
+      display: block;
+      min-height: 20vh;
+    text-align: center;
+    width: 100%;
+  }
+  .ui {
+    background-size: cover;
+    display: none;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .ui p {
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .ui p.zoom {
+    margin-bottom: 5px;
+  }
+  .ui p.zoom span {
+    margin-right: 5px;
+    border: solid 1px #777;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .ui p.zoom span.zoomin {
+    padding: 2px 5px;
+  }
+  .ui p.zoom span.zoomout {
+    padding: 2px 8px;
+  }
+  .ui p.zoom span:hover {
+    background: black;
+    color: white;
+  }
+
+.main-title {
+    font-size: 4em;
+    text-align: center;
+
+}
+
+.subtitle {
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.presentation {
+    position: relative;
+    top: 30vh;
+    height: 20vh;
+}
+
+.contact {
+    position: relative;
+    top: 110vh;
+    height: 30vh;
+}
+
+.projet {
+    position: relative;
+    top: 60vh;
+    height: 40vh;
+}
+
+.main-controller {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    position: relative;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px 10px;
+    top: 130vh;
+}
