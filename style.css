@@ -89,6 +89,7 @@
 
 h2 {
     padding-bottom: 1em;
+    padding-top: 0.5em;
 }
 
 .presentation {
@@ -102,7 +103,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.presentation-title {
+.presentation-title, .projet-title, .contact-title {
     text-align: center;
 }
 
@@ -115,6 +116,7 @@ h2 {
     font-size: 1.3rem;
     width: 70%;
     padding: 1rem 1.5rem;
+    left: -200vh;
 }
 
 .projet {
@@ -125,6 +127,7 @@ h2 {
     margin: 0.8rem auto;
     margin-bottom: 1rem;
     padding: 1rem 1.5rem;
+    left: -200vh;
 }
 
 .main-controller {
