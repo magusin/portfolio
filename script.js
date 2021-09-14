@@ -25,8 +25,8 @@ App.setup = function() {
   this.particles = [];
   this.lifespan = 1000;
   this.popPerBirth = 1;
-  this.maxPop = 300;
-  this.birthFreq = 2;
+  this.maxPop = 200;
+  this.birthFreq = 5;
 
   // Build grid
   this.gridSize = 8;// Motion coords

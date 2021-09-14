@@ -6,21 +6,29 @@
   html {
     overflow-y: scroll;
     scroll-behavior: smooth;
+    
   }
 
   body {
     color: white;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
   }
   canvas {
     transform-origin: 0 0;
+    height: 100vh;
     width: 100%;
-    height: 100%;
     position: fixed;
     z-index: -5;
+    background: white;
+  background: radial-gradient(#FFF, #DDD);
+  }
+
+  p {
+      font-weight: 600;
+      font-size: medium;
   }
 
   main, section {
@@ -38,9 +46,9 @@
     background-size: cover;
     display: none;
     position: fixed;
-    z-index: 5;
-    width: 100%;
-    height: 100vh;
+    z-index: -5;
+    max-height: 100vh;
+    max-width: 100%;
     background: rgba(255, 255, 255, 0.7);
   }
   .ui p {
@@ -79,22 +87,44 @@
 
 }
 
+h2 {
+    padding-bottom: 1em;
+}
+
 .presentation {
     position: relative;
     top: 30vh;
-    height: 20vh;
+    height: 30vh;
+    width: 70%;
+    margin: 0.8rem auto;
+    padding: 1rem 1.5rem;
+    left: -200vh;
+    margin-bottom: 1rem;
+}
+
+.presentation-title {
+    text-align: center;
 }
 
 .contact {
     position: relative;
     top: 110vh;
-    height: 30vh;
+    height: 40vh;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    width: 70%;
+    padding: 1rem 1.5rem;
 }
 
 .projet {
     position: relative;
     top: 60vh;
     height: 40vh;
+    width: 70%;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
 }
 
 .main-controller {
@@ -116,3 +146,10 @@ footer {
     padding: 20px 10px;
     top: 130vh;
 }
+
+ @media screen and (min-width: 1600px) {
+     canvas, .ui {
+height: 110vh;
+width: 100%;
+    }
+}  */
