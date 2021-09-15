@@ -39,14 +39,15 @@ canvas {
 p {
     font-weight: 600;
     font-size: medium;
+    letter-spacing: normal;
+    margin-bottom: 1em;
 }
 
-main, section {
+main, section, header, .presentation {
     position: relative;
 }
 
 header {
-    position: relative;
     display: block;
     min-height: 20vh;
     text-align: center;
@@ -122,9 +123,8 @@ h2 {
 }
 
 .presentation {
-    position: relative;
-    top: 30vh;
-    height: 30vh;
+    top: 10vh;
+    height: 40vh;
     width: 70%;
     margin: 0.8rem auto;
     padding: 1rem 1.5rem;
@@ -137,7 +137,6 @@ h2 {
 }
 
 .contact {
-    position: relative;
     top: 110vh;
     height: 40vh;
     margin: 0.8rem auto;
@@ -149,8 +148,7 @@ h2 {
 }
 
 .projet {
-    position: relative;
-    top: 60vh;
+    top: 30vh;
     height: 40vh;
     width: 70%;
     margin: 0.8rem auto;
@@ -184,4 +182,4 @@ footer {
 height: 110vh;
 width: 100%;
     }
-}  */
+}  
