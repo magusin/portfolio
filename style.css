@@ -7,6 +7,7 @@
 html {
     overflow-y: scroll;
     scroll-behavior: smooth; 
+    overflow-x: hidden;
 }
 
 li {
@@ -43,7 +44,7 @@ p {
     margin-bottom: 1em;
 }
 
-main, section, header, .presentation {
+main, section, header, .presentation, .log {
     position: relative;
 }
 
@@ -60,6 +61,28 @@ header {
     margin: 2rem;
 }
 
+.header_nav-right {
+    position: fixed;
+    left: 90%;
+    bottom: 50%;
+    font-size: larger;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.header_nav-left {
+    position: fixed;
+    bottom: 50%;
+    font-size: larger;
+    font-weight: 700;
+    z-index: 1;
+    
+}
+/* classe pour cacher un élément */
+.hidden {
+    display: none;
+}
+
 li {
     font-size: larger;
     margin-bottom: 2em;
@@ -71,8 +94,8 @@ li {
     display: none;
     position: fixed;
     z-index: -5;
-    max-height: 100vh;
-    max-width: 100%;
+    height: 100vh;
+    width: 100%;
     background: rgba(255, 255, 255, 0.7);
 }
 
@@ -104,7 +127,7 @@ li {
     background: black;
     color: white;
 }
-
+/* gestion des h */
 .main-title {
     font-size: 4em;
     text-align: center;
@@ -114,7 +137,6 @@ li {
 .subtitle {
     font-size: 3em;
     text-align: center;
-
 }
 
 h2 {
@@ -122,29 +144,30 @@ h2 {
     padding-top: 0.5em;
 }
 
-.presentation {
-    top: 10vh;
-    height: 40vh;
-    width: 70%;
-    margin: 0.8rem auto;
-    padding: 1rem 1.5rem;
-    left: -200vh;
-    margin-bottom: 1rem;
-}
-
-.presentation-title, .projet-title, .contact-title {
+ /* centrer tout les titres */
+.presentation-title, .projet-title, .contact-title, .log-title {
     text-align: center;
 }
-
+/* parties section */
 .contact {
-    top: 110vh;
-    height: 40vh;
+    top: 50vh;
+    min-height: 40vh;
     margin: 0.8rem auto;
     margin-bottom: 1rem;
     font-size: 1.3rem;
     width: 70%;
     padding: 1rem 1.5rem;
-    left: -200vh;
+    left: -2000px;
+}
+
+.presentation {
+    top: 10vh;
+    min-height: 40vh;
+    width: 70%;
+    margin: 0.8rem auto;
+    padding: 1rem 1.5rem;
+    left: -2000px; 
+    margin-bottom: 1rem;
 }
 
 .projet {
@@ -154,7 +177,19 @@ h2 {
     margin: 0.8rem auto;
     margin-bottom: 1rem;
     padding: 1rem 1.5rem;
-    left: -200vh;
+    left: -2000px;
+}
+
+.log {
+    top: -125vh;
+    left: 2000px;
+    position: relative;
+    width: 70%;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+   
+    
 }
 
 .main-controller {
@@ -165,18 +200,14 @@ h2 {
     flex-direction: column;
 }
 
-main {
-    position: relative;
-}
-
 footer {
     position: relative;
     text-align: center;
     font-weight: bolder;
     padding: 20px 10px;
-    top: 130vh;
+    top: 100vh;
 }
-
+/* ajustement du fond pour écran large */
  @media screen and (min-width: 1600px) {
      canvas, .ui {
 height: 110vh;
