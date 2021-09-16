@@ -19,6 +19,23 @@ a {
     color: #FFF;
 }
 
+.contact_flex {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact_flex-2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact_span {
+    margin-bottom: 1.5em;
+    
+}
+
 body {
     color: white;
     width: 100%;

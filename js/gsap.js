@@ -108,7 +108,7 @@ function triggerToLog() {
 
     },">")
     timeline.to('.log-p', {
-        duration: 4,
+        duration: 3,
         opacity: 1,
     }, "<")
     document.querySelector('.header_nav').classList.add('hidden');
