@@ -19,19 +19,19 @@ a {
     color: #FFF;
 }
 
-.contact_flex {
+.contact_div {
     display: flex;
     justify-content: space-around;
     
 }
 
-.contact_flex-2 {
+.contact_div-2 {
     display: flex;
     justify-content: center;
     
 }
 
-.contact_span {
+.contact_div-span {
     margin-bottom: 1.5em;
     
 }
@@ -148,7 +148,6 @@ li {
 .main-title {
     font-size: 4em;
     text-align: center;
-
 }
 
 .subtitle {
@@ -161,14 +160,14 @@ h2 {
     padding-top: 0.5em;
 }
 
- /* centrer tout les titres */
-.presentation-title, .projet-title, .contact-title, .log-title {
+ /* centrer tout les titres ainsi que les paragraphes nécessaires*/
+.presentation-title, .projets-title, .contact-title, .log-title, .projets_container_element-title, .projets-p {
     text-align: center;
 }
 /* parties section */
 .contact {
     top: 50vh;
-    min-height: 40vh;
+    min-height: 30vh;
     margin: 0.8rem auto;
     margin-bottom: 1rem;
     font-size: 1.3rem;
@@ -177,8 +176,21 @@ h2 {
     left: -2000px;
 }
 
-i:hover {
+.fa-envelope:hover, .fa-linkedin:hover, .fa-github:hover {
     transform: scale(1.2);
+}
+
+.fa-arrows-alt:active {
+    transform: rotate(360deg);
+}
+
+.fa-arrows-alt {
+  position: relative;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  cursor: pointer;
+  margin-bottom: 1em;
+  
 }
 
 .presentation {
@@ -191,14 +203,28 @@ i:hover {
     margin-bottom: 1rem;
 }
 
-.projet {
+.projets {
     top: 30vh;
-    height: 40vh;
+    min-height: 40vh;
     width: 70%;
     margin: 0.8rem auto;
     margin-bottom: 1rem;
     padding: 1rem 1.5rem;
     left: -2000px;
+}
+
+.projets_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+     
+}
+
+.projets_container_element {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2em;
 }
 
 .log {
@@ -226,8 +252,34 @@ footer {
     text-align: center;
     font-weight: bolder;
     padding: 20px 10px;
-    top: 100vh;
+    top: 30vh;
 }
+
+.nala, .cv, .enigma {
+    text-align: center;
+}
+
+.projets_container_element-title {
+    padding-bottom: 1em;
+}
+
+a[href="https://nos-amis-les-animaux.fr/"], a[href="https://hugo-jacques.com/"], a[href="https://hugo-jacques.com/enigma/"] {
+color: blue;
+background-color: #777;
+}
+
+.lana-img, .cv-img, .enigma-img {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 1em;
+}
+
+.lana-img:hover, .cv-img:hover, .enigma-img:hover {
+    width: 85%;
+    height: 85%;
+    padding-bottom: 1em;
+}
+
 /* ajustement du fond pour écran large */
  @media screen and (min-width: 1600px) {
      canvas, .ui {

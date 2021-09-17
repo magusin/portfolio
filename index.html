@@ -30,11 +30,11 @@
         <nav class="header_nav">
             <ul class="header_nav_ul" style="opacity:0;">
                 <li><a href="#presentation" >Présentation</a></li>
-                <li><a href="#projet" >Projet</a></li>
+                <li><a href="#projets" >Projets</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
         </nav>
-                <div  class="header_nav-right"><a onclick="triggerToLog()" href="#">Log >>></a></div>
+                <div style="opacity:0;" class="header_nav-right"><a onclick="triggerToLog()" href="#">Log >>></a></div>
                 <div style="opacity:0;" class="header_nav-left hidden"><a onclick="triggerToAccueil()" href="#"><<< Accueil</a></div>
        
         <h1 class="main-title">Hugo JACQUES</h1>
@@ -43,22 +43,61 @@
     <main class="main">
     <section class="presentation" id="presentation">
         <h2 class="presentation-title">Présentation</h2>
-    <p class="presentation-p" style="opacity:0;">Bonjour et bienvenue.</p>
-    <p class="presentation-p" style="opacity:0;">Après des années dans l'industrie j'ai décidé de changer de métier et de domaine. J'ai donc commencé par de l'autoapprentissage juste avant de suivre une formation de 6 mois avec l'école O'clock. A la fin de celle-ci je continue d'apprendre et de découvrir en autoapprentissage.</p>
-    <p class="presentation-p" style="opacity:0;">Sur ce portfolio il y a une partie pour les projets que j'ai réalisés, une page avec un suivi de ce que j'ai fait ou ce que je compte faire, les choses à revoir et celle à apprendre.</p>
-    <p class="presentation-p" style="opacity:0;">Le développement web était tout nouveau pour moi, j'ai découvert alors un univers vaste et varié où chaque destination peut être atteinte par divers chemins et avec différentes méthodes. Et j'adore ça, il me faudra plus de deux vies pour tout apprendre.</p>
-    <p class="presentation-p" style="opacity:0;">Bonne visite !</p>
+        <div class="presentation-p" style="opacity:0">
+    <p>Bonjour et bienvenue.</p>
+    <p>Après des années dans l'industrie j'ai décidé de changer de métier et de domaine. J'ai donc commencé par de l'autoapprentissage juste avant de suivre une formation de 6 mois avec l'école O'clock. A la fin de celle-ci je continue d'apprendre et de découvrir en autoapprentissage.</p>
+    <p>Sur ce portfolio il y a cette page pour les projets que j'ai réalisés ainsi que les moyens pour me contacter et une page avec un suivi de ce que j'ai fait ou ce que je compte faire, mes compétences et les choses à revoir et celle à apprendre.</p>
+    <p>Le développement web était tout nouveau pour moi, j'ai découvert alors un univers vaste et varié où chaque destination peut être atteinte par divers chemins et avec différentes méthodes. Et j'adore ça, il me faudra plus de deux vies pour tout apprendre.</p>
+    <p>Bonne visite !</p>
+</div>
     </section>
-    <section class="projet" id="projet">
-        <h2 class="projet-title">Projet</h2>
-    <p class="projet-p" style="opacity:0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit expedita adipisci magnam ea ducimus itaque illo quidem enim dolores maxime iure, asperiores, mollitia cumque rerum laudantium ab vero soluta suscipit deleniti. Culpa, vitae natus minus nesciunt inventore ipsum ullam id molestias nobis neque! Doloremque nisi aspernatur commodi saepe cum fuga ex! Beatae praesentium ratione quis, eos quae eius blanditiis incidunt laborum! Officia inventore sit accusantium labore a eum nulla commodi esse voluptatibus illum quo omnis temporibus, ducimus nihil est tempora? Illum molestiae mollitia beatae. Eos in iste ab itaque a alias quos accusamus, nulla neque optio ducimus ad quisquam, natus magni pariatur architecto veniam placeat obcaecati porro deleniti aliquam nihil? Temporibus et suscipit placeat atque asperiores odio ea maiores impedit, ab ullam similique. Praesentium facilis iure voluptatum totam corporis modi enim cupiditate mollitia, consequatur tenetur quidem perspiciatis quas velit omnis minus natus commodi, id optio minima veniam officia aliquid ratione! Eos nam nemo officiis beatae doloribus repellat, ex voluptate temporibus corrupti vel minima quia odio vitae, soluta veritatis ratione modi, labore impedit consectetur? Nemo ut, sunt aspernatur commodi necessitatibus temporibus. Repellat velit adipisci aut reiciendis quod rem pariatur esse quaerat. Animi illo beatae dolorem laboriosam molestias natus sit assumenda.</p>
+    <section class="projets" id="projets">
+        <h2 class="projets-title">Projets</h2>
+    <p class="projets-p" style="opacity:0;"></p>
+    <div class="projets_container">
+        <div class="projets_container_element">
+            <h3 class="projets_container_element-title">NALA</h3>
+            <p class="projets-p" style="opacity:0;">Site d'échange et de partage sur les animaux</p>
+            <div class="projets_span"><i onclick="projetNala()" class="fas fa-arrows-alt fa-2x"></i></div>
+            <div style="opacity:0;" class="projet-p hidden nala">
+                <img class="lana-img" src="./img/nala.png" alt="">
+                <p>Projet de fin de formation O'clock.</p>
+                <p>Le front a été fait avec React-Redux, React-router-dom, Axios.</p>
+                <p>Le back avec Symfony 5.</p>
+               <p>Visiter <a onclick="window.open(this.href); return false;" href="https://nos-amis-les-animaux.fr/">NALA</a></p> 
+            </div>
+        </div>
+        <div class="projets_container_element">
+            <h3 class="projets_container_element-title">CV</h3>
+            <p class="projets-p" style="opacity:0;">Mon CV.</p>
+            <div class="projets_span"><i onclick="projetCv()" class="fas fa-arrows-alt fa-2x"></i></div>
+            <div style="opacity:0;" class="projet-p hidden cv">
+                <img class="cv-img" src="./img/cv.png" alt="">
+                <p>Mon CV codé en HTML/CSS et node-Sass.</p>
+                <p>Utilisation de fontawesome.</p>
+                <p>Darkmode-js 1.5 pour le dark mode et vanta pour le fond 3D.</p>
+               <p>Visiter <a onclick="window.open(this.href); return false;" href="https://hugo-jacques.com/"> mon CV</a></p> 
+            </div>
+        </div>
+        <div class="projets_container_element">
+            <h3 class="projets_container_element-title">Enigma</h3>
+            <p class="projets-p" style="opacity:0;">Jeux d'énigme.</p>
+            <div class="projets_span"><i onclick="projetEnigma()" class="fas fa-arrows-alt fa-2x"></i></div>
+            <div style="opacity:0;" class="projet-p hidden enigma">
+                <img class="enigma-img" src="./img/enigma.png" alt="">
+                <p>Projet en HTML/CSS et JS.</p>
+                <p>Utilisation de javascript-obfuscator.</p>
+               <p>Visiter <a onclick="window.open(this.href); return false;" href="https://hugo-jacques.com/enigma/">Enigma</a></p> 
+            </div>
+        </div>
+    </div>
     </section>
     <section class="contact" id="contact">
         <h2 class="contact-title">Contact</h2>
     <p class="contact-p" style="opacity:0;">Si vous avez des questions, voici les moyens pour me contacter ;</p>
-    <div class="contact_flex"><span class="contact_span">Mon mail: <a onclick="window.open(this.href); return false;" href="mailto:hugo.jacques71@gmail.com"><i class="far fa-envelope fa-2x"></i></a></span>
-    <span class="contact_span">Mon linkedin: <a onclick="window.open(this.href); return false;" href="https://www.linkedin.com/in/dev-hugo-jacques/"><i class="fab fa-linkedin fa-2x"></i></a></span></div>
-    <div class="contact_flex-2">Mon github: <a onclick="window.open(this.href); return false;" href="https://github.com/magusin"><i class="fab fa-github fa-2x"></i></a></div>
+    <div class="contact_div"><span class="contact_span">Mon mail: <a onclick="window.open(this.href); return false;" href="mailto:hugo.jacques71@gmail.com"><i class="far fa-envelope fa-2x"></i></a></span>
+    <span class="contact_div-span">Mon linkedin: <a onclick="window.open(this.href); return false;" href="https://www.linkedin.com/in/dev-hugo-jacques/"><i class="fab fa-linkedin fa-2x"></i></a></span></div>
+    <div class="contact_div-2">Mon github: <a onclick="window.open(this.href); return false;" href="https://github.com/magusin"><i class="fab fa-github fa-2x"></i></a></div>
     </section>
     <section class="log" id="log">
         <h2 class="log-title">Log</h2>
@@ -71,14 +110,8 @@
     </footer>
 </div>
 
-
-
-
-    
-
-
 <!-- partial -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script><script  src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script><script  src="./js/script.js"></script>
 
 </body>
 </html>
