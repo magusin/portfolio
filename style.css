@@ -228,7 +228,7 @@ h2 {
 }
 
 .log {
-    top: -155vh;
+    top: -170vh;
     left: 2000px;
     position: relative;
     width: 70%;
@@ -277,8 +277,8 @@ background-color: #777;
 }
 
 .lana-img:hover, .cv-img:hover, .enigma-img:hover {
-    width: 85%;
-    height: 85%;
+    width: 60%;
+    height: 60%;
     padding-bottom: 1em;
 }
 
