@@ -228,15 +228,13 @@ h2 {
 }
 
 .log {
-    top: -125vh;
+    top: -155vh;
     left: 2000px;
     position: relative;
     width: 70%;
     margin: 0.8rem auto;
     margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-   
-    
+    padding: 1rem 1.5rem;  
 }
 
 .main-controller {
@@ -261,6 +259,10 @@ footer {
 
 .projets_container_element-title {
     padding-bottom: 1em;
+}
+
+.fa-github, .fa-linkedin, .fa-envelope {
+    margin-left: 1rem;
 }
 
 a[href="https://nos-amis-les-animaux.fr/"], a[href="https://hugo-jacques.com/"], a[href="https://hugo-jacques.com/enigma/"] {
