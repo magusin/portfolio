@@ -178,6 +178,47 @@ function projetEnigma() {
     }
 }
 
+function listHisto() {
+    if (document.querySelector('.historique').classList.contains('hidden')) {
+        document.querySelector('.historique').classList.remove('hidden'),
+        document.querySelector('.historique, .fa-chevron-right').classList.add('r-90');
+        timeline.to('.historique', {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector('.historique').classList.add('hidden');
+        document.querySelector('.historique, .fa-chevron-right').classList.remove('r-90');
+        timeline.to('.historique', {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
+function listSept() {
+    if (document.querySelector('.septembre').classList.contains('hidden')) {
+        document.querySelector('.septembre').classList.remove('hidden'),
+        document.querySelector('.septembre, .fa-long-arrow-alt-right').classList.add('r-90'),
+        document.querySelector('.septembre, .fa-long-arrow-alt-left').classList.add('r-270'),
+        document.querySelector('.septembre, .fa-chevron-up').classList.add('r-180');
+        timeline.to('.septembre', {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector('.septembre').classList.add('hidden');
+        document.querySelector('.septembre, .fa-long-arrow-alt-right').classList.remove('r-90'),
+        document.querySelector('.septembre, .fa-long-arrow-alt-left').classList.remove('r-270'),
+        document.querySelector('.septembre, .fa-chevron-up').classList.remove('r-180');
+        timeline.to('.septembre', {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
+
 
 
 

@@ -10,10 +10,6 @@ html {
     overflow-x: hidden;
 }
 
-li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
     color: #FFF;
@@ -100,12 +96,39 @@ header {
     display: none;
 }
 
-li {
+.header li {
+    list-style: none;
     font-size: larger;
     margin-bottom: 2em;
     font-weight: 700;
 }
+.footer-sec {
+    position: relative;
+    top: 250px;
+}
+.fa-times-circle {
+    color: red;
+    margin-left: 0.5rem;
+}
+.fa-check-circle {
+    color: green;
+    margin-left: 0.5rem;
+}
+.septembre {
+    background-color: rgb(56, 50, 50);
+    width: 60%;
+    padding: 10px 10px;
+    margin: auto;
+    height: 20vh;
+    overflow-y: scroll;
+    list-style: none;
+    
+}
 
+.log li {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
 .ui {
     background-size: cover;
     display: none;
@@ -156,7 +179,7 @@ li {
     padding-bottom: 5rem;
 }
 
-h2 {
+h2, h3, h4 {
     padding-bottom: 1em;
     padding-top: 0.5em;
 }
@@ -192,6 +215,26 @@ h2 {
   margin-bottom: 1em; 
 }
 
+.fa-chevron-right {
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.r-90 {
+    transform: rotate(90deg);
+}
+.r-180 {
+    transform: rotate(180deg);
+}
+.r-270 {
+    transform: rotate(270deg);
+}
+.fa-chevron-up {
+    cursor: pointer;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+}
 .presentation {
     min-height: 10vh;
     width: 70%;
@@ -234,6 +277,7 @@ h2 {
     width: 70%;
     padding: 1rem 1.5rem; 
     position: relative;
+    text-align: center;
 }
 
 .main-controller {
