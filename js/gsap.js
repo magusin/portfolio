@@ -39,6 +39,14 @@ gsap.to(".projets-p", {
         start: "-10px 80%",
     },
 },">")
+gsap.to(".projets_container", {
+    duration: 2,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".projets",
+        start: "-10px 80%",
+    },  
+}, "<")
 gsap.to('.projets-title', {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
 },"<");
 gsap.to('.projets_container_element-title',{
@@ -68,9 +76,34 @@ gsap.to(".contact-p", {
     }, 
 },">")
 gsap.to('.contact-title', {duration:2, scale: 1.6, scrollTrigger:".contact-title"
-},"<");
+},"<")
+gsap.to('.contact_div', {
+    duration: 2,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".contact_div",
+        start: "-10px 80%",
+    }, 
+},">")
+gsap.to('.contact_div-2', {
+    duration: 2,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".contact_div-2",
+        start: "-10px 80%",
+    }, 
+},">")
 
-
+gsap.to(".competences", {
+    duration: 1,
+    backgroundColor: "rgba(120, 120, 120, 0.20)",
+    scrollTrigger: {
+        trigger: ".competences",
+        start: "-10px 80%",
+    }, 
+})
+gsap.to('.competences-title', {duration:2, scale: 1.6, scrollTrigger:".competences"
+},">");
 
 function triggerToLog() {
     timeline.to('.main', {

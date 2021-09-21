@@ -63,13 +63,14 @@ main, section, header, .presentation, footer {
 header {
     text-align: center;
     width: 100%;
-    display: block;
+    
 }
 
 .header_nav_ul {
     display: flex;
     justify-content: space-around;
-    margin: 0.5rem;
+    margin: 1rem;
+    
     
 }
 
@@ -101,6 +102,7 @@ header {
     font-size: larger;
     margin-bottom: 2em;
     font-weight: 700;
+    z-index: 1;
 }
 .footer-sec {
     position: relative;
@@ -147,6 +149,7 @@ header {
 .historique-border-sept, .historique-border-aout {
     cursor: pointer;
     display: inline-block;
+    
     
 }
 
@@ -207,6 +210,9 @@ header {
 h2, h3, h4 {
     margin-bottom: 1em;
     margin-top: 0.5em; 
+}
+h4 {
+    text-decoration: underline;
 }
 .noblockthanks {
     display: inline-block;
@@ -301,7 +307,7 @@ h3:hover {
     margin-bottom: 2em;
 }
 
-.log {
+.log, .competences {
     top: 250px;
     min-height: 10vh;
     margin: 0.8rem auto;
@@ -310,6 +316,7 @@ h3:hover {
     padding: 1rem 1.5rem; 
     position: relative;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .main-controller {
