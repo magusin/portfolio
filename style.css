@@ -114,7 +114,7 @@ header {
     color: green;
     margin-left: 0.5rem;
 }
-.septembre {
+.septembre, .aout {
     background-color: rgb(56, 50, 50, 0.75);
     width: 60%;
     padding: 10px;
@@ -123,9 +123,10 @@ header {
     overflow-y: scroll;
     list-style: none;   
 }
-.septembre li:hover {
+.septembre li:hover, .aout li:hover {
     background-color: rgb(61, 10, 10);
 }
+
 
 .todoList {
     margin: auto;
@@ -143,7 +144,11 @@ header {
     background-color: rgb(61, 10, 10);
     
 }
-
+.historique-border-sept, .historique-border-aout {
+    cursor: pointer;
+    display: inline-block;
+    
+}
 
 .log li {
     font-size: 0.8em;
@@ -200,13 +205,17 @@ header {
 }
 
 h2, h3, h4 {
-    padding-bottom: 1em;
-    padding-top: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 0.5em; 
+}
+.noblockthanks {
+    display: inline-block;
 }
 
 h3:hover {
     cursor: pointer;
 }
+
 
  /* centrer tout les titres ainsi que les paragraphes nécessaires*/
 .presentation-title, .projets-title, .contact-title, .log-title, .projets_container_element-title, .projets-p {
@@ -254,7 +263,6 @@ h3:hover {
     transform: rotate(270deg);
 }
 .fa-chevron-up {
-    cursor: pointer;
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 1em;

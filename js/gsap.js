@@ -203,19 +203,41 @@ function listHisto() {
 function listSept() {
     if (document.querySelector('.septembre').classList.contains('hidden')) {
         document.querySelector('.septembre').classList.remove('hidden'),
-        document.querySelector('.historique .fa-long-arrow-alt-right').classList.add('r-90'),
-        document.querySelector('.historique .fa-long-arrow-alt-left').classList.add('r-270'),
-        document.querySelector('.historique .fa-chevron-up').classList.add('r-180');
+        document.querySelector('.historique-border-sept .fa-long-arrow-alt-right').classList.add('r-90'),
+        document.querySelector('.historique-border-sept .fa-long-arrow-alt-left').classList.add('r-270'),
+        document.querySelector('.historique-border-sept .fa-chevron-up').classList.add('r-180');
         timeline.to('.septembre', {
             duration: 1.5,
             opacity: 1,
         })
     } else {
         document.querySelector('.septembre').classList.add('hidden');
-        document.querySelector('.historique .fa-long-arrow-alt-right').classList.remove('r-90'),
-        document.querySelector('.historique .fa-long-arrow-alt-left').classList.remove('r-270'),
-        document.querySelector('.historique .fa-chevron-up').classList.remove('r-180');
+        document.querySelector('.historique-border-sept .fa-long-arrow-alt-right').classList.remove('r-90'),
+        document.querySelector('.historique-border-sept .fa-long-arrow-alt-left').classList.remove('r-270'),
+        document.querySelector('.historique-border-sept .fa-chevron-up').classList.remove('r-180');
         timeline.to('.septembre', {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
+function listAout() {
+    if (document.querySelector('.aout').classList.contains('hidden')) {
+        document.querySelector('.aout').classList.remove('hidden'),
+        document.querySelector('.historique-border-aout .fa-long-arrow-alt-right').classList.add('r-90'),
+        document.querySelector('.historique-border-aout .fa-long-arrow-alt-left').classList.add('r-270'),
+        document.querySelector('.historique-border-aout .fa-chevron-up').classList.add('r-180');
+        timeline.to('.aout', {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector('.aout').classList.add('hidden');
+        document.querySelector('.historique-border-aout .fa-long-arrow-alt-right').classList.remove('r-90'),
+        document.querySelector('.historique-border-aout .fa-long-arrow-alt-left').classList.remove('r-270'),
+        document.querySelector('.historique-border-aout .fa-chevron-up').classList.remove('r-180');
+        timeline.to('.aout', {
             duration: 0.1,
             opacity: 0,
         })

@@ -110,10 +110,12 @@
     <section class="log" id="log">
         <h2 class="log-title">Log</h2>
         <div class="historique-container">
-            <h3 onclick="listHisto()">Historique <i class="fas fa-chevron-right"></i></h3>
+            <h3 class="noblockthanks" onclick="listHisto()">Historique<i class="fas fa-chevron-right"></i></h3>
             <div class="historique hidden" style="opacity: 0;">
                 <h4>Septembre</h4>
-                <span><i class="fas fa-long-arrow-alt-right"></i></span><span><i onclick="listSept()" class="fas fa-chevron-up"></i></span><span><i class="fas fa-long-arrow-alt-left"></i></span>
+                <div onclick="listSept()" class="historique-border-sept">
+                    <span><i class="fas fa-long-arrow-alt-right"></i></span><span><i class="fas fa-chevron-up"></i></span><span><i class="fas fa-long-arrow-alt-left"></i></span>
+                </div>
                 <div class="septembre hidden" style="opacity: 0;">
                     <ul>
                         <li>Héberger Portfolio <i class="far fa-check-circle"></i></li>
@@ -130,10 +132,27 @@
                         <li>Héberger Projet <strong>Nala</strong> back et front de AWS à O2Switch <i class="far fa-check-circle"></i></li>
                     </ul>
                 </div>
+                <h4>Août</h4>
+                <div onclick="listAout()" class="historique-border-aout">
+                    <span><i class="fas fa-long-arrow-alt-right"></i></span><span><i class="fas fa-chevron-up"></i></span><span><i class="fas fa-long-arrow-alt-left"></i></span>
+                </div>
+                <div class="aout hidden" style="opacity: 0;">
+                    <ul>
+                        <li>Passer badge <strong>"JS"</strong> sur Linkedin <i class="far fa-times-circle"></i></li>
+                        <li>Ajout téléchargement et Dark-mode au CV<i class="far fa-check-circle"></i></li>
+                        <li>Réécriture et révision du Projet Pokedex, PhP avec méthode POO <i class="far fa-check-circle"></i></li>
+                        <li>Exportation de la BDD pokedex de Adminer à O2Switch<i class="far fa-check-circle"></i></li>
+                        <li>Héberger cv et projet sur O2swith, builder projets react depuis serveur<i class="far fa-check-circle"></i></li>
+                        <li>Configuration serveur pour version de yarn compatible au projet et build possible<i class="far fa-check-circle"></i></li>
+                        <li>Cours terminés, certification <strong>"GIT"</strong> de Dyma <i class="far fa-check-circle"></i></li>
+                        <li>Ajout Projet <strong>Nala</strong> au CV <i class="far fa-check-circle"></i></li>
+                        <li>Fin de formation <strong>O'clock</strong> <i class="far fa-check-circle"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="todoList-container">
-            <h3 onclick="todoList()">A faire <i  class="fas fa-chevron-right"></i></h3>
+            <h3 class="noblockthanks" onclick="todoList()">A faire <i class="fas fa-chevron-right"></i></h3>
             <div class="todoList hidden" style="opacity: 0;">
                 <ul>
                     <li>Passer examens pour la certification <strong>OpQuast</strong></li>
