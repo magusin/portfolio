@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Portfolio</title>
-  <script defer src="js/gsap.js"></script>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Portfolio</title>
+<script defer src="js/gsap.js"></script>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/261e37c4a6.js" crossorigin="anonymous"></script>
@@ -110,7 +110,7 @@
     <section class="log" id="log">
         <h2 class="log-title">Log</h2>
         <div class="historique-container">
-            <h3>Historique <i onclick="listHisto()" class="fas fa-chevron-right"></i></h3>
+            <h3 onclick="listHisto()">Historique <i class="fas fa-chevron-right"></i></h3>
             <div class="historique hidden" style="opacity: 0;">
                 <h4>Septembre</h4>
                 <span><i class="fas fa-long-arrow-alt-right"></i></span><span><i onclick="listSept()" class="fas fa-chevron-up"></i></span><span><i class="fas fa-long-arrow-alt-left"></i></span>
@@ -132,7 +132,33 @@
                 </div>
             </div>
         </div>
-        <p class="log-p" style="opacity:1;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit expedita adipisci magnam ea ducimus itaque illo quidem enim dolores maxime iure, asperiores, mollitia cumque rerum laudantium ab vero soluta suscipit deleniti. Culpa, vitae natus minus nesciunt inventore ipsum ullam id molestias nobis neque! Doloremque nisi aspernatur commodi saepe cum fuga ex! Beatae praesentium ratione quis, eos quae eius blanditiis incidunt laborum! Officia inventore sit accusantium labore a eum nulla commodi esse voluptatibus illum quo omnis temporibus, ducimus nihil est tempora? Illum molestiae mollitia beatae. Eos in iste ab itaque a alias quos accusamus, nulla neque optio ducimus ad quisquam, natus magni pariatur architecto veniam placeat obcaecati porro deleniti aliquam nihil? Temporibus et suscipit placeat atque asperiores odio ea maiores impedit, ab ullam similique. Praesentium facilis iure voluptatum totam corporis modi enim cupiditate mollitia, consequatur tenetur quidem perspiciatis quas velit omnis minus natus commodi, id optio minima veniam officia aliquid ratione! Eos nam nemo officiis beatae doloribus repellat, ex voluptate temporibus corrupti vel minima quia odio vitae, soluta veritatis ratione modi, labore impedit consectetur? Nemo ut, sunt aspernatur commodi necessitatibus temporibus. Repellat velit adipisci aut reiciendis quod rem pariatur esse quaerat. Animi illo beatae dolorem laboriosam molestias natus sit assumenda.</p>
+        <div class="todoList-container">
+            <h3 onclick="todoList()">A faire <i  class="fas fa-chevron-right"></i></h3>
+            <div class="todoList hidden" style="opacity: 0;">
+                <ul>
+                    <li>Passer examens pour la certification <strong>OpQuast</strong></li>
+                   <li>Suivre le cours OpenClassRooms; "Optimisez le référencement de votre site (SEO) en améliorant ses performances techniques."</li>
+                   <li>Faire les 198 leçons de <strong>JS</strong> sur Dyma et obtenir la certification</li>
+                   <li>Faire les 278 leçons d'<strong>Angular</strong> sur Dyma et obtenir la certification</li>
+                   <li>Suivre le cours inLearning; "L'essentiel d'Angular"</li>
+                   <li>Suivre le cours OpenClassRooms; "Développez des applications Web avec Angular"</li>
+                   <li>Faire les 195 leçons de <strong>React</strong> sur Dyma et obtenir la certification</li>
+                   <li>Suivre le cours OpenClassRooms; "Créer une application React complète"</li>
+                   <li>Faire les 93 leçons de <strong>MongoDB</strong> sur Dyma et obtenir la certification</li>
+                   <li>Faire les 177 leçons de <strong>Php</strong> sur Dyma et obtenir la certification</li>
+                   <li>Suivre le cours inLearning; "L'essentiel de PHP et MySQL"</li>
+                   <li>Faire les 172 leçons de <strong>Vue</strong> sur Dyma et obtenir la certification</li>
+                   <li>Suivre le cours OpenClassRooms; "Créer une application web avec Vue.js."</li>
+                   <li>Faire les 224 leçons de <strong>Node</strong> sur Dyma et obtenir la certification</li>
+                   <li>Faire les 151 leçons de <strong>Symfony</strong> sur Dyma et obtenir la certification</li>
+                   <li>Suivre le cours OpenClassRooms; "Construisez une API REST avec Symfony."</li>
+                   <li>Suivre le cours OpenClassRooms; "Construisez un site web à l'aide du framework Symfony 5"</li>
+                   <li>Faire les 58 leçons de <strong>Typescript</strong> sur Dyma et obtenir la certification</li>
+                   <li>Faire les 70 leçons de <strong>Docker</strong> sur Dyma et obtenir la certification</li>
+                   <li>Faire les 148 leçons de <strong>Flutter</strong> sur Dyma et obtenir la certification</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <footer class="footer-sec">
         <p>Hugo-JACQUES-dev.com ©</p>

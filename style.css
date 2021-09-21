@@ -115,18 +115,38 @@ header {
     margin-left: 0.5rem;
 }
 .septembre {
-    background-color: rgb(56, 50, 50);
+    background-color: rgb(56, 50, 50, 0.75);
     width: 60%;
-    padding: 10px 10px;
+    padding: 10px;
     margin: auto;
     height: 20vh;
     overflow-y: scroll;
-    list-style: none;
+    list-style: none;   
+}
+.septembre li:hover {
+    background-color: rgb(61, 10, 10);
+}
+
+.todoList {
+    margin: auto;
+    width: 60%;
+    height: 20vh;
+    overflow-y: scroll;
+    background-color: rgb(56, 50, 50, 0.75);
+    padding: 10px;
+    text-align: left;
+}
+.todoList li {
+    margin-left: 50px;
+}
+.todoList li:hover {
+    background-color: rgb(61, 10, 10);
     
 }
 
+
 .log li {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-bottom: 10px;
 }
 .ui {
@@ -182,6 +202,10 @@ header {
 h2, h3, h4 {
     padding-bottom: 1em;
     padding-top: 0.5em;
+}
+
+h3:hover {
+    cursor: pointer;
 }
 
  /* centrer tout les titres ainsi que les paragraphes nécessaires*/
