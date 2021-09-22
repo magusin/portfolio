@@ -1,98 +1,10 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let timeline = gsap.timeline({})
-gsap.to(".header_nav-right", {
-    duration: 1,
-    opacity: 1,
-})
-gsap.to(".header_nav_ul", {
-    duration: 2,
-    opacity: 1,
-})
-timeline
-.to(".presentation", {
-    duration: 1,
-    backgroundColor: "rgba(120, 120, 120, 0.20)",
-    x: 2000,
-})
-.to(".presentation-p", {
-    duration: 2,
-    opacity: 1,
-})
-.to('.presentation-title', {duration:1, scale: 1.6
-},"<");
 
-gsap.to(".projets", {
-    duration: 1,
-    backgroundColor: "rgba(120, 120, 120, 0.20)",
-    x: 2000,
-    scrollTrigger: {
-        trigger: ".projets",
-        start: "-10px 80%",
-    },
-})
-gsap.to(".projets-p", {
-    duration: 4,
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".projets",
-        start: "-10px 80%",
-    },
-},">")
-gsap.to(".projets_container", {
-    duration: 2,
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".projets",
-        start: "-10px 80%",
-    },  
-}, "<")
-gsap.to('.projets-title', {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
-},"<");
-gsap.to('.projets_container_element-title',{
-    duration: 2,
-    scale: 1.5,
-    scrollTrigger: {
-        trigger: ".projets",
-        start: "-10px 80%",
-    },  
-})
-
-gsap.to(".contact", {
-    duration: 1,
-    backgroundColor: "rgba(120, 120, 120, 0.20)",
-    x: 2000,
-    scrollTrigger: {
-        trigger: ".contact",
-        start: "-10px 80%",
-    }, 
-})
-gsap.to(".contact-p", {
-    duration: 2,
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".contact-p",
-        start: "-10px 80%",
-    }, 
-},">")
-gsap.to('.contact-title', {duration:2, scale: 1.6, scrollTrigger:".contact-title"
-},"<")
-gsap.to('.contact_div', {
-    duration: 2,
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".contact_div",
-        start: "-10px 80%",
-    }, 
-},">")
-gsap.to('.contact_div-2', {
-    duration: 2,
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".contact_div-2",
-        start: "-10px 80%",
-    }, 
-},">")
+document.addEventListener('DOMContentLoaded', function() {
+    start();
+  });
 
 gsap.to(".competences", {
     duration: 1,
@@ -107,30 +19,26 @@ gsap.to('.competences-title', {duration:2, scale: 1.6, scrollTrigger:".competenc
 
 function triggerToLog() {
     timeline.to('.main', {
-        duration: 2,
-        opacity: 1,
+        duration: 1,
+        opacity: 0,
         x: -4000,
-        y: 0,
+        
     })
     timeline.to('.main-controller-2', {
         duration: 1,
         opacity: 1,
     })
-    .to('.log', {
+    timeline.to('.log', {
         backgroundColor: "rgba(120, 120, 120, 0.20)",
     }, "<")
-    .to('.log-title', {
+    timeline.to('.log-title', {
         duration: 2,
         scale: 1.6,
     }, ">")
-    .to(".header_nav", {
+    timeline.to(".header_nav", {
         duration: 0.5,
         opacity: 0,
     },"<")
-    timeline.to(".header_nav-right", {
-        duration: 0.5,
-        opacity: 0,
-    },">")
     document.querySelector('.header_nav').classList.add('hidden');
     document.querySelector('.header_nav-right').classList.add('hidden');
     document.querySelector('.header_nav-left').classList.remove('hidden');
@@ -138,6 +46,7 @@ function triggerToLog() {
         duration: 1,
         opacity: 1,
     }, "<-1")
+    gsap.to(offStart());
 };
 
 function triggerToAccueil() {
@@ -145,10 +54,11 @@ function triggerToAccueil() {
         duration: 1,
         opacity: 0,
     })
-    .to('.main', {
+    timeline.to('.main', {
         duration: 1,
+        opacity: 1,
         x: 0,
-        y: 0,
+        
     })
     timeline.to(".header_nav", {
         duration: 1,
@@ -165,6 +75,167 @@ function triggerToAccueil() {
     document.querySelector('.header_nav-left').classList.add('hidden');
     document.querySelector('.header_nav-right').classList.remove('hidden');
     document.querySelector('.header_nav').classList.remove('hidden');
+    gsap.to(start())
+}
+
+function start() {
+    gsap.to(".header_nav-right", {
+        duration: 1,
+        opacity: 1,
+        delay: 2
+        
+    })
+    gsap.to(".header_nav_ul", {
+        duration: 2,
+        opacity: 1,
+    })
+    gsap.to(".presentation", {
+        duration: 1,
+        opacity: 1,
+        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        x: 2000,
+    })
+    gsap.to(".presentation-p", {
+        duration: 1,
+        opacity: 1,
+    },">")
+    gsap.to('.presentation-title', {duration:2, scale: 1.6
+    },">")
+
+    gsap.to(".projets", {
+        duration: 1,
+        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        x: 2000,
+        scrollTrigger: {
+               trigger: ".projets",
+            start: "-10px 80%",
+        },
+    })
+    gsap.to(".projets-p", {
+        duration: 2,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".projets",
+            start: "-10px 80%",
+        },
+    },">")
+    gsap.to(".projets_container", {
+        duration: 2,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".projets",
+            start: "-10px 80%",
+        },  
+    }, "<")
+    gsap.to('.projets-title', {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
+    },"<")
+    gsap.to('.projets_container_element-title',{
+        duration: 2,
+        scale: 1.5,
+        scrollTrigger: {
+            trigger: ".projets",
+            start: "-10px 80%",
+        },  
+    })
+
+    gsap.to(".contact", {
+        duration: 1,
+        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        x: 2000,
+        scrollTrigger: {
+            trigger: ".contact",
+            start: "-10px 80%",
+       }, 
+    })
+    gsap.to(".contact-p", {
+        duration: 2,
+       opacity: 1,
+       scrollTrigger: {
+           trigger: ".contact-p",
+           start: "-10px 80%",
+       }, 
+    },">")
+    gsap.to('.contact-title', {duration:2, scale: 1.6, scrollTrigger:".contact-title"
+    },"<")
+    gsap.to('.contact_div', {
+        duration: 2,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".contact_div",
+            start: "-10px 80%",
+        }, 
+    },">")
+    gsap.to('.contact_div-2', {
+        duration: 2,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".contact_div-2",
+           start: "-10px 80%",
+       }, 
+    },">")
+}
+
+function offStart() {
+    gsap.to(".header_nav-right", {
+        duration: 0.1,
+        opacity: 0,
+    })
+    gsap.to(".header_nav_ul", {
+        duration: 0.1,
+        opacity: 0,
+    })
+    gsap.to(".presentation", {
+        duration: 0.1,
+        opacity: 0,
+        x: -2000,
+        backgroundColor: "rgba(120, 120, 120, 0)",
+    })
+    gsap.to(".presentation-p", {
+        duration: 0.1,
+        opacity: 0,
+    })
+    gsap.to('.presentation-title', {duration:0.1, scale: 1
+    })
+
+    gsap.to(".projets", {
+        duration: 0.1,
+        x: -2000,
+        backgroundColor: "rgba(120, 120, 120, 0)",
+    })
+    gsap.to(".projets-p", {
+        duration: 0.1,
+        opacity: 0,
+    })
+    gsap.to(".projets_container", {
+        duration: 0.1,
+        opacity: 0, 
+    })
+    gsap.to('.projets-title', {duration:0.1, scale: 1
+    })
+    gsap.to('.projets_container_element-title',{
+        duration: 0.1,
+        scale: 1,
+    })
+
+    gsap.to(".contact", {
+        duration: 0.1,
+        x: -2000,
+        backgroundColor: "rgba(120, 120, 120, 0)",
+    })
+    gsap.to(".contact-p", {
+        duration: 0.1,
+       opacity: 0,
+    })
+    gsap.to('.contact-title', {duration:0.1, scale: 1 
+    })
+    gsap.to('.contact_div', {
+        duration: 0.1,
+        opacity: 0,
+    })
+    gsap.to('.contact_div-2', {
+        duration: 0.1,
+        opacity: 0,
+    })
 }
 
 function projetNala() {
@@ -294,6 +365,16 @@ function todoList() {
         })
     }
 }
+
+timeline.to("#health", {
+    duration: 3,
+    delay: 3,
+    value: '100',
+    scrollTrigger: {
+        trigger: ".competences",
+        start: "-10px 80%",
+    },
+})
 
 
 

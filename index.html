@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <title>Portfolio</title>
 <script defer src="js/gsap.js"></script>
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
         <h2 class="subtitle">Développeur web</h2>
     </header>
     <main class="main">
-    <section class="presentation" id="presentation">
+    <section class="presentation" id="presentation" style="opacity: 0;">
         <h2 class="presentation-title">Présentation</h2>
         <div class="presentation-p" style="opacity:0">
     <p>Bonjour et bienvenue.</p>
@@ -181,11 +181,13 @@
     </section>
     <section class="competences">
         <h2 class="competences-title">Compétence</h2>
+        <progress id="health" value="0" max="100"></progress>
+
     </section>
     <footer class="footer-sec">
         <p>Hugo-JACQUES-dev.com ©</p>
         <p>Tout droits réservés, 2021</p>
-            </footer>
+    </footer>
     </div>
 </div>
 
