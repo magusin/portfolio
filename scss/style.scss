@@ -1,0 +1,308 @@
+@import "base";
+@import "reset";
+@import "animations";
+.main {
+    position: relative;
+    &-controller {
+        top: 0;
+        position: absolute;
+        min-width: 100%;
+        height: auto;
+        &-2 {
+            top: 0;
+            position: absolute;
+            min-width: 100%;
+            height: auto;
+        }
+    }
+    &-title {
+        font-size: 3em;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    &-2 {
+        position: relative;
+    }
+}
+.header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    & li {
+        list-style: none;
+        font-size: larger;
+        margin-bottom: 2em;
+        font-weight: 700;
+        z-index: 1;
+    }
+    &_nav_ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+    &_nav-right {
+        position: fixed;
+        right: 0;
+        /* left: 80vh; */
+        bottom: 50%;
+        font-size: larger;
+        font-weight: 700;
+        z-index: 1;
+    }
+    &_nav-left {
+        position: fixed;
+        bottom: 50%;
+        font-size: larger;
+        font-weight: 700;
+        z-index: 1;
+        
+    }
+}
+// les sections
+.presentation {
+    position: relative;
+    min-height: 10vh;
+    width: 70%;
+    margin: 0.8rem auto;
+    padding: 1rem 1.5rem;
+    left: -2000px; 
+    margin-bottom: 4rem;   
+}
+.projets {
+    min-height: 10vh;
+    width: 70%;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    left: -2000px;
+    margin-bottom: 4rem;
+    z-index: 1; 
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        margin-bottom: 4rem;
+        &_element {
+            width: 50%;
+            height: 50%;
+            margin-bottom: 2em;
+        }
+    }
+}
+// espace flex de contact et competences
+.contact {
+    min-height: 10vh;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    width: 70%;
+    padding: 1rem 1.5rem;
+    left: -2000px;
+    z-index: 1;
+    &_div {
+        display: flex;
+        justify-content: space-around;
+        &-2 {
+            display: flex;
+            justify-content: center; 
+        }
+        &-span {
+            margin-bottom: 1.5em;
+        }  
+    }
+}
+.log {
+    top: 250px;
+    min-height: 10vh;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    width: 70%;
+    padding: 1rem 1.5rem; 
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
+    & li {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+    & h3:hover {
+        cursor: pointer;
+    }
+}
+.competences {
+    top: 250px;
+    min-height: 10vh;
+    margin: 0.8rem auto;
+    margin-bottom: 1rem;
+    width: 70%;
+    padding: 1rem 1.5rem; 
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        padding-bottom: 4rem;
+        &_section {
+            width: 18%;
+            height: 50%;
+            padding: 20px;
+        }
+    }
+}  
+.septembre {
+    background-color: rgba(56, 50, 50, 0.75);
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    height: 20vh;
+    overflow-y: scroll;
+    list-style: none;
+    & li:hover {
+        background-color: rgb(61, 10, 10);
+    }    
+}
+.todoList {
+    margin: auto;
+    width: 60%;
+    height: 20vh;
+    overflow-y: scroll;
+    background-color: rgba(56, 50, 50, 0.75);
+    padding: 10px;
+    text-align: left;
+    & li {
+        margin-left: 50px;
+        &:hover {
+            background-color: rgb(61, 10, 10);
+            
+        }
+    }
+}
+.aout {
+    @extend .septembre
+}
+.historique-border-sept, .historique-border-aout {
+    cursor: pointer;
+    display: inline-block;
+}
+// gestion taille et espace image
+.nala-img, .cv-img, .enigma-img {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 1em;
+}
+.nala-img:hover, .cv-img:hover, .enigma-img:hover, .competences-img {
+    width: 60%;
+    height: 60%;
+    padding-bottom: 1em;
+    
+}
+.nala, .cv, .enigma {
+    text-align: center;
+}
+.progress {
+    max-width: 75%
+}
+.projets_container_element-title {
+    padding-bottom: 1em;
+}
+.fa-github, .fa-linkedin, .fa-envelope {
+    margin-left: 1rem;
+}
+// libérer certain titre
+.noblockthanks {
+    display: inline-block;
+}
+.subtitle {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+// les footers
+.footer {
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px 10px;  
+    &-sec {
+        position: relative;
+        text-align: center;
+        top: 300px;
+    }
+}
+// gérer quelques couleurs
+.fa-times-circle {
+    color: red;
+    margin-left: 0.5rem;
+}
+.fa-check-circle {
+    color: green;
+    margin-left: 0.5rem;
+}
+// ui du fond
+.ui {
+    background-size: cover;
+    display: none;
+    position: fixed;
+    z-index: -5;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    & p {
+        font-size: 11px;
+        font-weight: 700;
+        &.zoom {
+            margin-bottom: 5px;
+        }
+        & span {
+            margin-right: 5px;
+            border: solid 1px #777;
+            cursor: pointer;
+            border-radius: 2px;
+            &.zoomin {
+                padding: 2px 5px;
+            }
+            &.zoomout {
+                padding: 2px 8px;
+            }
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .log {
+        width: 60%;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .header_nav_ul {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .projets_container_element {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 880px) {
+    .competences_container_section {
+        width: 25%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .competences_container_section {
+        width: 33%;
+        padding: 8px;
+    }
+}

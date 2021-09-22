@@ -1,0 +1,38 @@
+.fa-envelope:hover, .fa-linkedin:hover, .fa-github:hover {
+    transform: scale(1.2);
+}
+
+.fa-arrows-alt:active {
+    transform: rotate(360deg); 
+     
+}
+
+.fa-arrows-alt {
+    position: relative;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    cursor: pointer;
+    margin-bottom: 1em; 
+     
+}
+
+.fa-chevron-right {
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.fa-chevron-up {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+}
+
+.r-90 {
+    transform: rotate(90deg);
+}
+.r-180 {
+    transform: rotate(180deg);
+}
+.r-270 {
+    transform: rotate(270deg);
+}

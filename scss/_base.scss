@@ -1,0 +1,65 @@
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+body {
+    color: white;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+canvas {
+    transform-origin: 0 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -5;
+    background: white;
+    background: radial-gradient(#FFF, #DDD);
+}
+
+section {
+    position: relative;
+}
+
+p {
+    font-weight: 600;
+    font-size: medium;
+    letter-spacing: normal;
+    margin-bottom: 1em;
+    line-height: 150%;
+}
+
+h2, h3, h4 {
+    margin-bottom: 1em;
+    margin-top: 0.5em; 
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+// Passer blue "a" bien précis
+a[href="https://nos-amis-les-animaux.fr/"], a[href="https://hugo-jacques.com/"], a[href="https://hugo-jacques.com/enigma/"] {
+    color: blue;
+    background-color: #777;
+}
+
+.hidden {
+    display: none;
+}
+
+ /* centrer tout les titres ainsi que les paragraphes nécessaires*/
+ .presentation-title, .projets-title, .contact-title, .log-title, .projets_container_element-title, .projets-p {
+    text-align: center;
+}
+
+
+
