@@ -381,7 +381,7 @@ background-color: #777;
     flex-wrap: wrap;
     flex-direction: row;
     text-align: center;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .competences_container-js {
