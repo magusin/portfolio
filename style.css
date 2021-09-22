@@ -385,5 +385,12 @@ background-color: #777;
         font-size: 1.4rem;
     }
 }
+@media screen and (max-width: 425px) {
+    .projets_container_element {
+        width: 100%;
+        height: auto;
+    }
+    
+}
     
 
