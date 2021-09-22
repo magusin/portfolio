@@ -95,8 +95,9 @@ function start() {
         },
     })
     gsap.to(".projets-p", {
-        duration: 2,
+        duration: 1,
         opacity: 1,
+        delay: 2,
         scrollTrigger: {
             trigger: ".projets",
             start: "-10px 80%",
@@ -106,11 +107,11 @@ function start() {
         duration: 2,
         opacity: 1,
         scrollTrigger: {
-            trigger: ".projets",
+            trigger: ".projets_container",
             start: "-10px 80%",
         },  
     }, "<")
-    gsap.to(".projets-title", {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
+    gsap.to(".projets-title", {duration:2, scale: 1.6, delay: 2, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
     },"<")
     gsap.to(".projets_container_element-title",{
         duration: 2,
@@ -226,6 +227,7 @@ function theShowMustGoOn() {
     gsap.to(".competences", {
         duration: 1,
         opacity: 1,
+        delay: 1,
         backgroundColor: "rgba(120, 120, 120, 0.20)",
         scrollTrigger: {
             trigger: ".competences",
