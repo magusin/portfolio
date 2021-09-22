@@ -236,7 +236,7 @@ function theShowMustGoOn() {
             start: "-10px 80%",
         }, 
     })
-    gsap.to("#health", {
+    gsap.to(".health", {
         duration: 3,
         delay: 2,
         value: '100',
@@ -261,7 +261,7 @@ function theShowMustGoOff() {
         opacity: 0,
         backgroundColor: "rgba(120, 120, 120, 0)",
     })
-    gsap.to("#health", {
+    gsap.to(".health", {
         value: '0',
     })
 }
