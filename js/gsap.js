@@ -90,7 +90,6 @@ function start() {
     gsap.to(".projets", {
         duration: 1,
         opacity: 1,
-        delay: 0.5,
         backgroundColor: "rgba(120, 120, 120, 0.20)",
         x: 2000,
         scrollTrigger: {
@@ -113,9 +112,9 @@ function start() {
             trigger: ".projets",
             start: "-10px 80%",
         },  
-    }, "<")
+    }, ">")
     gsap.to(".projets-title", {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
-    },"<")
+    },">")
     gsap.to(".projets_container_element-title",{
         duration: 2,
         scale: 1.6,
@@ -254,47 +253,47 @@ function theShowMustGoOn() {
     }, "<")
     gsap.to(".js", {
         duration: 0.4,
-        value: "95"
+        value: "100"
     }, ">")
     gsap.to(".php", {
         duration: 0.4,
-        value: "45"
+        value: "100"
     }, ">")
     gsap.to(".react", {
         duration: 0.4,
-        value: "35"
+        value: "100"
     }, ">")
     gsap.to(".redux", {
         duration: 0.4,
-        value: "30"
+        value: "100"
     }, ">")
     gsap.to(".node", {
         duration: 0.4,
-        value: "20"
+        value: "100"
     }, ">")
     gsap.to(".bootstrap", {
         duration: 0.4,
-        value: "95"
+        value: "100"
     }, ">")
     gsap.to(".symfony", {
         duration: 0.4,
-        value: "10"
+        value: "100"
     }, ">")
     gsap.to(".typescript", {
         duration: 0.4,
-        value: "20"
+        value: "100"
     }, ">")
     gsap.to(".angular", {
         duration: 0.4,
-        value: "15"
+        value: "100"
     }, ">")
     gsap.to(".wordpress", {
         duration: 0.4,
-        value: "40"
+        value: "100"
     }, ">")
     gsap.to(".sql", {
         duration: 0.4,
-        value: "65"
+        value: "100"
     }, ">")
 }
 
@@ -449,7 +448,6 @@ function todoList() {
         })
     }
 }
-
 
 
 
