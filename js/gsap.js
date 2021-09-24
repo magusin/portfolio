@@ -101,7 +101,7 @@ function start() {
         duration: 2,
         opacity: 1,
         scrollTrigger: {
-            trigger: ".projets",
+            trigger: ".projets-p",
             start: "-10px 80%",
         },
     },">")
@@ -109,17 +109,17 @@ function start() {
         duration: 2,
         opacity: 1,
         scrollTrigger: {
-            trigger: ".projets",
+            trigger: ".projets_container",
             start: "-10px 80%",
         },  
     }, ">")
-    gsap.to(".projets-title", {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets", start: "-10px 80%" }
+    gsap.to(".projets-title", {duration:2, scale: 1.6, scrollTrigger: { trigger: ".projets-title", start: "-10px 80%" }
     },">")
     gsap.to(".projets_container_element-title",{
         duration: 2,
         scale: 1.6,
         scrollTrigger: {
-            trigger: ".projets",
+            trigger: ".projets_container_element-title",
             start: "-10px 80%",
         },  
     },">")
