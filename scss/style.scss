@@ -185,7 +185,10 @@
 .aout {
     @extend .septembre
 }
-.historique-border-sept, .historique-border-aout {
+.oct {
+    @extend .aout
+}
+.historique-border-sept, .historique-border-aout, .historique-border-oct{
     cursor: pointer;
     display: inline-block;
 }
@@ -233,6 +236,10 @@
         text-align: center;
         top: 300px;
     }
+}
+// barrer tâches fait
+.through {
+    text-decoration: line-through;
 }
 // gérer quelques couleurs
 .fa-times-circle {

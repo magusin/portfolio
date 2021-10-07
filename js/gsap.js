@@ -387,6 +387,28 @@ function listHisto() {
     }
 }
 
+function listOct() {
+    if (document.querySelector(".oct").classList.contains("hidden")) {
+        document.querySelector(".oct").classList.remove("hidden"),
+        document.querySelector(".historique-border-oct .fa-long-arrow-alt-right").classList.add("r-90"),
+        document.querySelector(".historique-border-oct .fa-long-arrow-alt-left").classList.add("r-270"),
+        document.querySelector(".historique-border-oct .fa-chevron-up").classList.add("r-180");
+        timeline.to(".oct", {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector(".oct").classList.add("hidden");
+        document.querySelector(".historique-border-oct .fa-long-arrow-alt-right").classList.remove("r-90"),
+        document.querySelector(".historique-border-oct .fa-long-arrow-alt-left").classList.remove("r-270"),
+        document.querySelector(".historique-border-oct .fa-chevron-up").classList.remove("r-180");
+        timeline.to(".oct", {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
 function listSept() {
     if (document.querySelector(".septembre").classList.contains("hidden")) {
         document.querySelector(".septembre").classList.remove("hidden"),
