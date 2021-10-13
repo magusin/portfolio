@@ -41,7 +41,8 @@ h4 {
 
 a[href="https://nos-amis-les-animaux.fr/"], a[href="https://hugo-jacques.com/"], a[href="https://hugo-jacques.com/enigma/"] {
   color: blue;
-  background-color: #777; }
+  background-color: #770;
+  text-decoration: underline; }
 
 .hidden {
   display: none; }
@@ -248,11 +249,11 @@ a[href="https://nos-amis-les-animaux.fr/"], a[href="https://hugo-jacques.com/"],
   display: inline-block; }
 
 .nala-img, .cv-img, .enigma-img {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   padding-bottom: 1em; }
 
-.nala-img:hover, .cv-img:hover, .enigma-img:hover, .competences-img {
+.competences-img {
   width: 60%;
   height: 60%;
   padding-bottom: 1em; }
