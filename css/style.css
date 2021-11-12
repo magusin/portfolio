@@ -248,7 +248,7 @@ a[href="https://nos-amis-les-animaux.fr/"], a[href="https://hugo-jacques.com/"],
   cursor: pointer;
   display: inline-block; }
 
-.nala-img, .cv-img, .enigma-img, .movies-img, .pokedex-img, .café-img {
+.nala-img, .cv-img, .enigma-img, .movies-img, .pokedex-img, .café-img, .port-img {
   max-width: 70%;
   max-height: 70%;
   padding-bottom: 1em; }
