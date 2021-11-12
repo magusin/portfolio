@@ -77,7 +77,7 @@ function start() {
     gsap.to(".presentation", {
         duration: 1,
         opacity: 1,
-        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        backgroundColor: "rgba(120, 120, 120, 0.50)",
         x: 2000,
     })
     gsap.to(".presentation-p", {
@@ -90,7 +90,7 @@ function start() {
     gsap.to(".projets", {
         duration: 1,
         opacity: 1,
-        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        backgroundColor: "rgba(120, 120, 120, 0.50)",
         x: 2000,
         scrollTrigger: {
                trigger: ".projets",
@@ -126,7 +126,7 @@ function start() {
 
     gsap.to(".contact", {
         duration: 1,
-        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        backgroundColor: "rgba(120, 120, 120, 0.50)",
         x: 2000,
         scrollTrigger: {
             trigger: ".contact",
@@ -215,7 +215,7 @@ function offStart() {
 function theShowMustGoOn() {
     gsap.to(".log", {
         duration: 1,
-        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        backgroundColor: "rgba(120, 120, 120, 0.50)",
     })
     gsap.to(".log-title", {
         duration: 2,
@@ -229,7 +229,7 @@ function theShowMustGoOn() {
     gsap.to(".competences", {
         duration: 1,
         opacity: 1,
-        backgroundColor: "rgba(120, 120, 120, 0.20)",
+        backgroundColor: "rgba(120, 120, 120, 0.50)",
         scrollTrigger: {
             trigger: ".competences",
             start: "-10px 80%",
@@ -363,6 +363,54 @@ function projetEnigma() {
     } else {
         document.querySelector(".enigma").classList.add("hidden");
         timeline.to(".enigma", {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
+function projetMovies() {
+    if (document.querySelector(".movies").classList.contains("hidden")) {
+        document.querySelector(".movies").classList.remove("hidden");
+        timeline.to(".movies", {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector(".movies").classList.add("hidden");
+        timeline.to(".movies", {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
+function projetPokedex() {
+    if (document.querySelector(".pokedex").classList.contains("hidden")) {
+        document.querySelector(".pokedex").classList.remove("hidden");
+        timeline.to(".pokedex", {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector(".pokedex").classList.add("hidden");
+        timeline.to(".pokedex", {
+            duration: 0.1,
+            opacity: 0,
+        })
+    }
+}
+
+function projetCafé() {
+    if (document.querySelector(".café").classList.contains("hidden")) {
+        document.querySelector(".café").classList.remove("hidden");
+        timeline.to(".café", {
+            duration: 1.5,
+            opacity: 1,
+        })
+    } else {
+        document.querySelector(".café").classList.add("hidden");
+        timeline.to(".café", {
             duration: 0.1,
             opacity: 0,
         })
